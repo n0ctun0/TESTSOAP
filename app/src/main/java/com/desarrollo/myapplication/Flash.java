@@ -6,6 +6,9 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.desarrollo.myapplication.consultor.ConsultorPrecioActivity;
+import com.desarrollo.myapplication.consultor.fullscream.FullscreenActivity;
+
 public class Flash extends AppCompatActivity {
     MediaPlayer bienvenidosound;
     @Override

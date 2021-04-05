@@ -77,10 +77,15 @@ import okhttp3.Response;
 
 public class ScannerElo extends AppCompatActivity {
     private OkHttpClient Pickinghttp;
+
     private String sucursal;
+
     private String m_printerMAC = null;
     private String m_ip = null;
     private ApiAdapter apiAdapter;
+
+
+
     private Inventory inventory;
     private Handler m_handler = new Handler(); // Main thread
     private Request RequestPicking;
@@ -107,7 +112,7 @@ public class ScannerElo extends AppCompatActivity {
         super.onResume();
         apiAdapter.getActivityMonitor().onActivityEvent(ActivityMonitor.EVENT_ON_RESUME);
 
-        updatePaperStatus();
+        //updatePaperStatus();
 
     }
 
@@ -181,10 +186,6 @@ public class ScannerElo extends AppCompatActivity {
             }
         });
 
-        WebView myWebView = (WebView) findViewById(R.id.webview);
-        WebSettings webSettings = myWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("http://www.sanroque.com.uy");
 
         ocultarteclado();
 

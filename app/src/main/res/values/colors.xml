@@ -30,5 +30,7 @@
     <color name="azulimpreso">#7C8392</color>
     <color name="ofertaimpreso">#A1AC79</color>
 
+    <color name="black_overlay">#66000000</color>
+
 
 </resources>
